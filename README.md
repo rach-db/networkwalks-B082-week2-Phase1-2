@@ -254,9 +254,9 @@ The final network configuration was verified using `ip addr` on Kali and `ipconf
 |---|---|---|
 | Kali | eth0 | 10.0.0.2/24 |
 | Kali | eth1 | 192.xxx.xx.x/24 |
-| Windows Host | Host-Only Adapter | 192.168.56.1/24 |
+| Windows Host | Host-Only Adapter | 192.xxx.xx.x/24 |
 | Windows 10 VM | Ethernet | 10.0.0.10/24 |
-| Windows 10 VM | Ethernet 2 | 192.168.56.100/24 |
+| Windows 10 VM | Ethernet 2 | 192.xxx.xx.xxx/24 |
 
 **Zenmap**
 
