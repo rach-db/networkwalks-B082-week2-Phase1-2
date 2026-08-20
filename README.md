@@ -398,3 +398,5 @@ Footprinting / OSINT + Network Scanning -> Initial Attack Surface Understanding
 ```
 
 ---
+## Author
+Rachel Debbarma
