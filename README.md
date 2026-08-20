@@ -255,11 +255,11 @@ Kali successfully obtained `192.xxx.xx.x/24` and became visible to Zenmap during
 
 **Problem**
 
-The Windows 10 VM initially had only its existing `10.0.0.10/24` network connection. Therefore, it was not part of the `192.168.56.0/24` network being scanned by Zenmap.
+The Windows 10 VM initially had only its existing `10.0.0.10/24` network connection. Therefore, it was not part of the `192.xxx.xx.x/24` network being scanned by Zenmap.
 
 **Solution**
 
-A second network adapter was added to the Windows 10 VM and connected to the same Host-Only network. The Windows VM then received `192.168.56.100/24`, allowing it to appear as a live host during the Zenmap scan.
+A second network adapter was added to the Windows 10 VM and connected to the same Host-Only network. The Windows VM then received `192.xxx.xx.xxx/24`, allowing it to appear as a live host during the Zenmap scan.
 
 **Verification**
 
