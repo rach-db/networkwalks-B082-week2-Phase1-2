@@ -83,6 +83,21 @@ The discovery of an email address alone does not indicate the presence of a vuln
 - `info@networkwalks.com` result
 - Transform output showing one entity returned
 - Final graph showing the relationship between the domain and email entity
+  
+### Search Web Footprinting
+
+I also used the **Search Web [Search Engine]** transform against the `networkwalks.com` domain.
+
+The transform returned **21 entities**, producing a graph containing **22 entities and 21 links** in total.
+
+The results represented publicly indexed web resources associated with the search query. These results were treated as search-engine findings and were not assumed to be assets owned by the target without further verification.
+
+This activity helped demonstrate how search-engine-based OSINT can be used to understand an organization's publicly visible information footprint.
+
+**Evidence Captured**
+- Search Web transform execution
+- Search Web results showing 21 returned entities
+- Final Maltego graph showing 22 entities and 21 links
 
 ---
 
@@ -280,6 +295,8 @@ The final scan successfully identified the active hosts on the Host-Only network
 - Learned how email addresses can be associated with a domain through search-based transforms.
 - Learned how relationships between entities can be represented visually in Maltego.
 - Understood that publicly available information can contribute to an organization's visible attack surface.
+- Learned how search-engine-based transforms can reveal publicly indexed information related to a domain.
+- Learned that OSINT results should be validated before assuming that a discovered resource is owned or controlled by the target.
 
 **Network Scanning**
 - Learned how Zenmap provides a graphical interface for Nmap.
@@ -368,7 +385,7 @@ Footprinting activities were performed within the scope of the assigned educatio
 
 During Week 2 of the Cybersecurity & Ethical Hacking internship, I completed practical activities covering footprinting and network scanning.
 
-For **W2-PM3**, Maltego was used to perform domain-based footprinting against `networkwalks.com`. A Domain entity was created and an email-related transform was executed, resulting in the discovery of `info@networkwalks.com`. The result was visualized as a relationship between the domain and the email entity.
+For **W2-PM3**, Maltego was used to perform domain-based footprinting against `networkwalks.com`. A Domain entity was created, and both an email-related transform and the **Search Web [Search Engine]** transform were used. The email transform returned `info@networkwalks.com`, while the Search Web transform returned 21 entities and produced a graph containing 22 entities and 21 links.
 
 For **W2-PM5**, Zenmap was used to perform a Ping Scan against the controlled `192.xxx.xx.x/24` Host-Only network. The lab network was configured with multiple virtual machines and network interfaces, allowing live hosts to be discovered and analyzed.
 
